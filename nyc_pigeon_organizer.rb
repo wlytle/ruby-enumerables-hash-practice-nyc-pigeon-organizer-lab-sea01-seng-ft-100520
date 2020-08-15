@@ -42,7 +42,7 @@ def nyc_pigeon_organizer(data)
     pigeon_data[internal_keys[i]][values[i]].map do |inner_quality| # -> mapping over "purple" key
       external_keys.map do |member|
         if inner_quality == member
-          pigeon_list[]
+          pigeon_list[member][]
         end
       end
     end
