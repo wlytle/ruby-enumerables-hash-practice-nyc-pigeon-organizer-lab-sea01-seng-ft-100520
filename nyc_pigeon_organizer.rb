@@ -16,7 +16,7 @@ def nyc_pigeon_organizer(data)
   end
   
   #gather data that will be the innermost keys for the final data structure
-  internal_keys = pigeon_data.map { |key,value| key }
+  internal_keys = data.map { |key,value| key }
   
   # Create a matrix of values for final hash [[color],[gender], [lives]] -> lives is a string all other symbols
   for i in 0...internal_keys.length 
