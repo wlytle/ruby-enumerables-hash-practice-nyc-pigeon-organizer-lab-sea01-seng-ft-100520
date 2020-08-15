@@ -1,3 +1,4 @@
+require 'pry'
 def nyc_pigeon_organizer(data)
   # Original hashes are `:color`, `:gender`, and `:lives`, with sub hashes of categories and values of names
   # need hashes of names with sub hashes of the above categories and values of categories
