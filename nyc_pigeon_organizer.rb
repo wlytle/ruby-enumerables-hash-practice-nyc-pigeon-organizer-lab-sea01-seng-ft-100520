@@ -38,5 +38,6 @@ def nyc_pigeon_organizer(data)
   end
   
   # fill in values
+  pigeon_data
   
 end
