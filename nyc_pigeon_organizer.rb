@@ -31,7 +31,7 @@ def nyc_pigeon_organizer(data)
   end
   
   external_keys.map do |external_key|
-    internal_keys.map do |intenral_key|
+    internal_keys.map do |internal_key|
       pigeon_list[external_key][internal_key] = []
     end
   end
