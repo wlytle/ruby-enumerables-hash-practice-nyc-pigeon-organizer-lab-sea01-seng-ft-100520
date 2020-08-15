@@ -6,4 +6,8 @@ def nyc_pigeon_organizer(data)
   0...internal_keys.length 
   values = pigeon_data[internal_keys[0]].map { |key,value| key }
   
+  for i in 0...internal_keys.length 
+    values[i] = pigeon_data[internal_keys[i]].map { |key,value| key }
+  end
+  
 end
