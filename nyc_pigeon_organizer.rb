@@ -20,7 +20,7 @@ def nyc_pigeon_organizer(data)
   
   # Create a matrix of values for final hash [[color],[gender], [lives]] -> lives is a string all other symbols
   for i in 0...internal_keys.length 
-    values[i] = pigeon_data[internal_keys[i]].map { |key,value| key }
+    values[i] = data[internal_keys[i]].map { |key,value| key }
   end
   
   external_keys = get_outter_hash_keys()
