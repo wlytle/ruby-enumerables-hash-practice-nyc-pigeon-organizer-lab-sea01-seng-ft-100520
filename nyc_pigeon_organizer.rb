@@ -23,6 +23,7 @@ def nyc_pigeon_organizer(data)
   
   external_keys = get_outter_hash_keys()
   
-  
+  # Set up new data structure
+  pigeon_list = {}
   
 end
