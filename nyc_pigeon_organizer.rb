@@ -38,6 +38,7 @@ def nyc_pigeon_organizer(data)
   end
   
   # fill in values
-  pigeon_data
-  
+  for i in 0...internal_keys do
+    pigeon_data[internal_keys[i]]
+  end
 end
