@@ -25,5 +25,8 @@ def nyc_pigeon_organizer(data)
   
   # Set up new data structure
   pigeon_list = {}
+  external_keys.map do |key|
+    pigeon_list = {key: {}}
+  end
   
 end
