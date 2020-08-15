@@ -30,5 +30,6 @@ def nyc_pigeon_organizer(data)
     pigeon_list[key] = {}
   end
   
+  internal_keys
   
 end
