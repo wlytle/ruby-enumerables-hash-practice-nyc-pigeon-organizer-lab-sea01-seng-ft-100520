@@ -29,4 +29,6 @@ def nyc_pigeon_organizer(data)
   external_keys.map do |key|
     pigeon_list = {key: {}}
   end
+  
+  
 end
