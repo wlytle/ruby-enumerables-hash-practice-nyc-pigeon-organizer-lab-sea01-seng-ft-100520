@@ -4,7 +4,7 @@ def nyc_pigeon_organizer(data)
 
   values = []
   
-  ## loop through all future values to 
+  ## loop through all future values to crate an array of arrays of future external_keys e.g. pigeon names then collapse those arrays and kep only uniq names
   def get_outter_hash_keys()
     external_keys = []
     for i in 0...values[0].length
