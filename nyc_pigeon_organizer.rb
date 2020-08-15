@@ -30,6 +30,3 @@ def nyc_pigeon_organizer(data)
     pigeon_list = {key: {}}
   end
 end
-
-binding.pry
-
