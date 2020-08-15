@@ -10,6 +10,7 @@ def nyc_pigeon_organizer(data)
     for i in 0...values[0].length
    external_keys <<  pigeon_data[internal_keys[0]][values[0][i]]
     end
+    external_keys = external_keys.flatten.uniq
   end
   
   internal_keys = pigeon_data.map { |key,value| key }
