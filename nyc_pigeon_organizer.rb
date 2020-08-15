@@ -13,12 +13,16 @@ def nyc_pigeon_organizer(data)
     external_keys = external_keys.flatten.uniq
   end
   
+  #gather data that will be the innermost keys for the final data structure
   internal_keys = pigeon_data.map { |key,value| key }
+  
   # Create a matrix of values for final hash [[color],[gender], [lives]] -> lives is a string all other symbols
   for i in 0...internal_keys.length 
     values[i] = pigeon_data[internal_keys[i]].map { |key,value| key }
   end
   
-  get_outter_hash_keys()
+  external_keys = get_outter_hash_keys()
+  
+  
   
 end
