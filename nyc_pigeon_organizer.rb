@@ -10,7 +10,7 @@ def nyc_pigeon_organizer(data)
   def get_outter_hash_keys()
     external_keys = []
     for i in 0...values[0].length
-   external_keys <<  pigeon_data[internal_keys[0]][values[0][i]]
+   external_keys <<  data[internal_keys[0]][values[0][i]]
     end
     external_keys = external_keys.flatten.uniq
   end
