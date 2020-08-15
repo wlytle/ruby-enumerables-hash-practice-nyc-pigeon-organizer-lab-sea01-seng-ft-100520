@@ -5,7 +5,8 @@ def nyc_pigeon_organizer(data)
   values = []
   
   def get_outter_hash_keys()
-    pigeon_data[internal_keys[0]][values[0][0]]
+    for i in 0...values[0].length
+    pigeon_data[internal_keys[0]][values[0][i]]
   end
   
   internal_keys = pigeon_data.map { |key,value| key }
