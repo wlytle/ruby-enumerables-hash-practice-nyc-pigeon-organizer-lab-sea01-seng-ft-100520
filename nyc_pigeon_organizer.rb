@@ -5,16 +5,6 @@ def nyc_pigeon_organizer(data)
 
   values = []
   
-  ## loop through all future values to crate an array of arrays of future external_keys e.g. pigeon names then collapse those arrays and kep only uniq names
-  
-  def get_outter_hash_keys()
-    external_keys = []
-    for i in 0...values[0].length
-   external_keys <<  data[internal_keys[0]][values[0][i]]
-    end
-    external_keys = external_keys.flatten.uniq
-  end
-  
   #gather data that will be the innermost keys for the final data structure
   internal_keys = data.map { |key,value| key }
   
@@ -23,7 +13,14 @@ def nyc_pigeon_organizer(data)
     values[i] = data[internal_keys[i]].map { |key,value| key }
   end
   
-  external_keys = get_outter_hash_keys()
+  ## loop through all future values to crate an array of arrays of future external_keys e.g. pigeon names then collapse those arrays and kep only uniq names
+  
+    external_keys = []
+    for i in 0...values[0].length
+   external_keys <<  data[internal_keys[0]][values[0][i]]
+    end
+    external_keys = external_keys.flatten.uniq
+  
   
   # Set up new data structure
   pigeon_list = {}
